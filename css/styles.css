@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #9a7a63;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+}
+
+/* HERO */
+
+.wrap {
+    background-image: url(../images/image-5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    min-width: 100%;
+    position: relative;
+}
+
+.wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    position: relative;
+    color: #f8f8f8;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px 0;
+    opacity: 1;
+}
+.logo {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.shopping__cart {
+    color: #34626c;
+    width: 30px;
+    height: 30px;
+}
+
+.hero--text {
+    position: relative;
+    color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.hero__section__heading {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.hero__section__cta {
+    background-color: #000000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 10px 50px;
+    margin-top: 50px;
+}
+
+.hero__section__cta:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #000000;
+    color: black;
+}
+
+/* DESCRIPTION */
+
+.description--section {
+    height: auto;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    animation: .5s linear ease-in;
+}
+
+.description--one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description--two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.description__text {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.image__placeholder {
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 80%;
+    background-color: #9a7a63;
+}
+
+.fashion-img {
+    width: 80%;
+    max-width: 300px;
+}
+
+.description__heading {
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.description__text {
+    padding-bottom: 40px;
+}
+
+.description__two__text {
+    padding: 40px;
+}
+
+.image__placeholder__two {
+    background-image: url(../images/image-7.jpg);
+}
+
+/* Collection Section */
+
+.collection--section {
+    background-color: #9b938d;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.collection__section__heading {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.image__placeholder__three {
+    background-image: url(../images/image-8.jpg);
+    margin-bottom: 40px;
+}
+
+.image__placeholder__four {
+    background-image: url(../images/image-9.jpg);
+    margin-bottom: 40px;
+}
+
+.image__placeholder__five {
+    background-image: url(../images/image-6.jpg);
+}
+
+/* On Sale Section */
+
+.on--sale--section {
+    background-color: #f8f8f8;
+    height: auto;
+    padding: 60px 0;
+}
+
+.on--sale--text {
+    text-align: center;
+}
+
+.on__sale__text__heading {
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.on__sale__text__cta {
+    background-color: #000000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 10px 50px;
+    margin-top: 50px;
+}
+
+.on__sale__text__cta:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.on--sale--image {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+/* Contact Section */
+
+.contact--section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact--section--map {
+    /* background image placeholder */
+    background-image: url(../images/image-12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact__box {
+    background-color: #9a7a63;
+    position: absolute;
+    height: 100px;
+    width: 60%;
+    bottom: 80px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__box .address__text {
+    color: #f8f8f8;
+    padding-bottom: 10px;
+}
+
+.email__address {
+    color: #f8f8f8;
+}
+
+.map__placeholder {
+    width: 80%;
+}
+
+.contact--section--form {
+    /* background image placeholder */
+    background-image: url(../images/image-11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.contact--section--form form {
+    display: flex;
+    flex-direction: column;
+    /* height: 50vh; */
+}
+
+.contact__form__heading {
+    color: #f8f8f8;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.contact__form label {
+    font-size: 12px;
+    color: #f8f8f8;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+}
+
+.contact__form input {
+    border: none;
+    font-family: inherit;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact__form textarea {
+    padding: 10px;
+    font-family: inherit;
+}
+
+.contact__form__cta {
+    align-self: flex-start;
+    background-color: #000000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 10px 50px;
+    margin-top: 50px;
+}
+
+.contact__form__cta:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.contact__form__submitted {
+    font-size: 28px;
+    color: #f8f8f8;
+}
+
+/* Footer Section  */
+
+.footer--section {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 60px 20px;
+}
+
+.footer--about {
+    padding-bottom: 30px;
+}
+
+.footer__about__heading {
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+
+.privacy--policy {
+    padding-bottom: 30px;
+}
+
+.privacy--policy a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact__number {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.social__media__icons a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fa {
+    font-size: 24px;
+}
+
+.fa-instagram {
+    padding-right: 30px;
+}
+
+.fa-instagram:hover {
+    color: #9a7a63;
+    font-size: 28px;
+}
+
+.fa-facebook:hover {
+    color: #9a7a63;
+    font-size: 28px;
+}
+
+.copyright {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px){
+
+    .wrap {
+        height: 100vh;
+    }
+
+
+    nav {
+        padding: 0 200px 0 100px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+
+    .hero__section__heading {
+        font-size: 68px;
+    }
+
+    .hero__section__year {
+        font-size: 64px;
+    }
+
+    .hero__section__cta {
+        margin-top: 100px;
+    }
+
+    .description--section {
+        flex-direction: row;
+        height: auto;
+        padding: 100px 0;
+        justify-content: space-evenly;
+    }
+
+    .description--one {
+        flex-basis: 45%;
+        justify-content: flex-start;
+        align-items: initial;
+    }
+    .description--two {
+        flex-basis: 45%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-top: 0;
+    }
+
+    .description__text {
+        text-align: left;
+    }
+
+    .description__two__text {
+        padding: 40px 0 0;
+    }
+
+    .image__placeholder {
+        height: 45vh;
+        width: 50%;
+    }
+
+    .fashion-img-1 {
+        align-self: flex-end;
+    }
+
+    .fashion-img-2 {
+        align-self: flex-start;
+    }
+
+    .collection--section {
+        background-image: url(../images/image-10.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        height: 60vh;
+        padding: 0 60px;
+    }
+
+    .fashion-img-3 {
+        position: absolute;
+        left: 150px;
+        top: 150px;
+        width: 200px;
+    }
+
+    .fashion-img-4 {
+        position: absolute;
+        top: 150px;
+        width: 200px;
+    }
+
+
+    .fashion-img-5 {
+        position: absolute;
+        right: 150px;
+        top: 150px;
+        width: 200px;
+    }
+
+    .on--sale--section {
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+
+    .on--sale--text {
+        flex-basis: 50%;
+    }
+
+    .on--sale--image {
+        flex-basis: 50%;
+    }
+
+    .contact--section {
+        flex-direction: row;
+    }
+
+    .contact--section--map {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        align-items: center;
+        flex-basis: 50%;
+    }
+
+    .contact--section--form {
+        flex-basis: 50%;
+        padding: initial;
+        padding: 60px 40px;
+    }
+
+    .contact__form__cta {
+        margin-top: 20px;
+    }
+
+    .contact__form label {
+        display: none;
+    }
+
+    .footer--section {
+        height: 20vh;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .footer--about {
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: initial;
+    }
+
+    .privacy--policy {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: initial;
+    }
+
+    .social--media {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .contact__number {
+        padding-right: 50px;
+        padding-bottom: initial;
+    }
+
+}
+
+
+@media screen and (min-width: 1026px){
+    .image__placeholder__three,
+    .image__placeholder__four,
+    .image__placeholder__five {
+        top: 150px;
+        width: 300px;
+    }
+    .footer--section {
+        padding: 0 80px;
+    }
+
+}
